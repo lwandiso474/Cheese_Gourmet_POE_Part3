@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact Cheese Gourmet in Linden, Johannesburg. See our opening hours and map, or request a cheese platter online.">
+<meta name="keywords" content="contact Cheese Gourmet, request cheese platter, opening hours, Linden Johannesburg map">
+<meta name="author" content="st10518954">
+<title>Cheese Gourmet - Contact Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<nav>
+<a class="brand" href="index.html"><img src="images/logo.jpg" alt="Cheese Gourmet logo"></a>
+<a href="index.html">Home</a>
+<a href="about.html">About us</a>
+<a href="products.html">Products</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html" aria-current="page">Contact us</a>
+<a href="platters-catering.html">Platters &amp; catering</a>
+<a href="faqs.html">FAQs</a>
+<a class="cart-link" href="products.html#cart">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+<main>
+<h1 class="page-title">Contact Us</h1>
+<div class="two-col">
+<div class="hero left">
+<h2>Get in touch</h2>
+<p><b>Telephone:</b> 011 888 5387</p>
+<p><b>Address:</b> 71A 7th Street (corner of 3rd Avenue), Linden, Johannesburg</p>
+<p><b>Email:</b> info@cheesegourmet.co.za</p>
+<h3>Opening hours</h3>
+<p id="open-status" class="open-status" role="status"></p>
+<table class="hours"><tr><td>Monday - Friday</td><td>08:00 - 17:00</td></tr><tr><td>Saturday</td><td>08:00 - 15:00</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table>
+<h3>Find our store</h3>
+<div class="map-box"><iframe title="Map showing the Cheese Gourmet store" src="https://maps.google.com/maps?q=Cheese%20Gourmet%20Johannesburg&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" allowfullscreen></iframe></div>
+<p><a href="https://www.google.com/maps/place/Cheese+Gourmet/@-26.1373001,27.9922249,17z/data=!3m1!4b1!4m6!3m5!1s0x1e950b38a0ff59c9:0x98b55fb18f285350!8m2!3d-26.1373001!4d27.9947998!16s%2Fg%2F1262mv7lr" target="_blank" rel="noopener">Open in Google Maps - get directions</a></p>
+<a href="https://wa.me/27123456789?text=Hi%20Cheese%20Gourmet,%20I%20want%20to%20order%20from%20your%20location" class="btn whatsapp" target="_blank" rel="noopener">Order on WhatsApp</a>
+</div>
+<div class="hero left">
+<h2>Request a platter</h2>
+<form id="contact-form" name="platter-request" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+<input type="hidden" name="form-name" value="platter-request">
+<input type="hidden" name="subject" value="New platter request from the Cheese Gourmet website">
+<p class="hidden"><label>Leave this empty: <input name="bot-field"></label></p>
+<label for="name">Name</label><input type="text" id="name" name="name"><span id="name-error" class="error"></span>
+<label for="email">Email</label><input type="email" id="email" name="email"><span id="email-error" class="error"></span>
+<label for="people">Number of people</label><input type="number" id="people" name="people" min="1" max="200" placeholder="For example 8"><span id="people-error" class="error"></span>
+<label for="platter">Which platter?</label>
+<select id="platter" name="platter"><option>Small - R250</option><option>Medium - R450</option><option>Large - R850</option></select>
+<label for="date">Preferred date</label><input type="date" id="date" name="date"><span id="date-error" class="error"></span>
+<label for="message">Message (optional)</label><textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+<button type="submit">Send request</button>
+</form>
+<p id="form-result" role="status"></p>
+</div>
+</div>
+</main>
+<footer>
+<p id="datetime"></p>
+<p>71A 7th Street, Linden, Johannesburg | Tel: 011 888 5387</p>
+<p>&copy; st10518954</p>
+</footer>
+<script src="javascript/cart.js"></script>
+<script src="javascript/datetime.js"></script>
+<script src="javascript/contact.js"></script>
+</body>
+</html>

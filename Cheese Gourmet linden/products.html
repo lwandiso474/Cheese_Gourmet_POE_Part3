@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse Cheese Gourmet products: cheddar, brie, gouda, blue cheese, breads, preserves, crackers, olives and cheese platters from R250.">
+<meta name="keywords" content="cheddar, brie, gouda, blue cheese, sourdough, preserves, cheese platter prices, buy cheese Johannesburg">
+<meta name="author" content="st10518954">
+<title>Cheese Gourmet - Products</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<nav>
+<a class="brand" href="index.html"><img src="images/logo.jpg" alt="Cheese Gourmet logo"></a>
+<a href="index.html">Home</a>
+<a href="about.html">About us</a>
+<a href="products.html" aria-current="page">Products</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact us</a>
+<a href="platters-catering.html">Platters &amp; catering</a>
+<a href="faqs.html">FAQs</a>
+<a class="cart-link" href="products.html#cart">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+<main>
+<h1 class="page-title">Our Products</h1>
+<p class="intro">Discover our quality cheeses from around the world.</p>
+<h2 class="section-title">Platters</h2>
+<div class="grid">
+<div class="hero card"><h2>Small platter</h2><p class="price">R250</p><p>Perfect for 2-4 people</p><img src="images/image 11.jpg" alt="A small cheese platter with fruit"><div class="actions"><button type="button" class="add-to-cart" data-name="Small platter" data-price="250">Add to cart</button><a href="platters-catering.html" class="btn">Order now</a></div></div>
+<div class="hero card"><h2>Medium platter</h2><p class="price">R450</p><p>Perfect for 6-8 people</p><img src="images/image 12.jpg" alt="A medium cheese platter with crackers"><div class="actions"><button type="button" class="add-to-cart" data-name="Medium platter" data-price="450">Add to cart</button><a href="platters-catering.html" class="btn">Order now</a></div></div>
+<div class="hero card"><h2>Large platter</h2><p class="price">R850</p><p>Perfect for 10-15 people</p><img src="images/image 15.jpg" alt="A large grazing platter"><div class="actions"><button type="button" class="add-to-cart" data-name="Large platter" data-price="850">Add to cart</button><a href="platters-catering.html" class="btn">Order now</a></div></div>
+</div>
+<h2 class="section-title">From our shelves</h2>
+<div class="grid four">
+<div class="hero card"><h2>Cheeses</h2><img src="images/image 3.jpg" alt="Selection of cheeses"><ul class="plain"><li>Cheddar cheese</li><li>Brie cheese</li><li>Gouda cheese</li><li>Blue cheese</li></ul></div>
+<div class="hero card"><h2>Our breads</h2><img src="images/image 4.jpg" alt="Freshly baked breads"><ul class="plain"><li>Sourdough bread</li><li>French baguette</li><li>Ciabatta</li></ul></div>
+<div class="hero card"><h2>Preserves</h2><img src="images/image 5.jpg" alt="Jars of jam and preserves"><ul class="plain"><li>Strawberry jam</li><li>Fig preserve</li><li>Apricot preserve</li></ul></div>
+<div class="hero card"><h2>Other gourmet products</h2><img src="images/image 6.jpg" alt="Crackers, olives and gourmet sauces"><ul class="plain"><li>Crackers</li><li>Olives</li><li>Gourmet sauces</li></ul></div>
+</div>
+<div class="hero cart-box" id="cart">
+<h2>Your cart</h2>
+<p id="cart-message" role="status"></p>
+<ul id="cart-items" class="plain"></ul>
+<p id="cart-total">Total: R0.00</p>
+<button type="button" id="checkout">Checkout</button>
+<button type="button" id="clear-cart" class="ghost">Clear cart</button>
+</div>
+</main>
+<footer>
+<p id="datetime"></p>
+<p>&copy; st10518954</p>
+</footer>
+<script src="javascript/cart.js"></script>
+<script src="javascript/datetime.js"></script>
+</body>
+</html>

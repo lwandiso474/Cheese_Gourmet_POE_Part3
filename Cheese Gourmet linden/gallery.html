@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="See photos of our cheese platters, fresh breads and gourmet products in the Cheese Gourmet gallery.">
+<meta name="keywords" content="cheese gallery, cheese platter photos, gourmet food pictures, Cheese Gourmet Linden">
+<meta name="author" content="st10518954">
+<title>Cheese Gourmet - Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<nav>
+<a class="brand" href="index.html"><img src="images/logo.jpg" alt="Cheese Gourmet logo"></a>
+<a href="index.html">Home</a>
+<a href="about.html">About us</a>
+<a href="products.html">Products</a>
+<a href="gallery.html" aria-current="page">Gallery</a>
+<a href="contact.html">Contact us</a>
+<a href="platters-catering.html">Platters &amp; catering</a>
+<a href="faqs.html">FAQs</a>
+<a class="cart-link" href="products.html#cart">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+<main>
+<h1 class="page-title">Our Gallery</h1>
+<p class="intro">Welcome to the Cheese Gourmet gallery. Here you can explore some of the delicious products and gourmet foods that we offer.</p>
+<div id="slideshow">
+<img id="slide-image" src="images/image 11.jpg" alt="">
+<p id="slide-caption"></p>
+<div class="slide-controls"><button type="button" id="slide-prev">Previous</button><span id="slide-counter"></span><button type="button" id="slide-next">Next</button></div>
+</div>
+<div class="grid">
+<div class="hero card"><h2>Our cheese selection</h2><img class="zoom" src="images/image 9.jpg" alt="A selection of cheeses"><p>We offer a variety of quality cheeses with different flavours and textures. Our cheeses are perfect for enjoying at home, sharing with family and friends, or adding to a special event.</p></div>
+<div class="hero card"><h2>Freshly baked bread</h2><img class="zoom" src="images/image 8.jpg" alt="Freshly baked bread"><p>Our selection of fresh breads is a great match for our cheeses and preserves. Enjoy delicious bread as part of a breakfast, lunch, snack or gourmet platter.</p></div>
+<div class="hero card"><h2>Explore our products</h2><img class="zoom" src="images/image 10.jpg" alt="Cheese, bread and preserves"><p>At Cheese Gourmet, we believe that good food brings people together. Our products are carefully selected to provide customers with a delicious and memorable experience. From rich and creamy cheeses to fresh breads and tasty preserves, there is something for everyone to enjoy. Browse our products and discover your new favourite gourmet food.</p></div>
+</div>
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+<button type="button" id="lb-close" aria-label="Close">&times;</button>
+<button type="button" id="lb-prev" aria-label="Previous image">&#10094;</button>
+<figure><img id="lb-image" src="" alt=""><figcaption id="lb-caption"></figcaption></figure>
+<button type="button" id="lb-next" aria-label="Next image">&#10095;</button>
+</div>
+</main>
+<footer>
+<p id="datetime"></p>
+<p>&copy; st10518954</p>
+</footer>
+<script src="javascript/cart.js"></script>
+<script src="javascript/datetime.js"></script>
+<script src="javascript/slideshow.js"></script>
+<script src="javascript/lightbox.js"></script>
+</body>
+</html>
